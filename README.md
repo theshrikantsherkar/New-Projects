@@ -14,17 +14,17 @@ import smtplib
 import random
 
 num = random.randint(0, 80)
-# print(num)
+
 
 lst = ["sir, you are looking great.", "i like your hairstyle sir.", "boss you are looking cute today.", "boss you look so charming", "wow sir i can't wink my eyes from you", "may you always stay blessed by your such good looks"]
 looks = random.choice(lst)
-# print(looks)
+
 
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 
-# print(voices[1].id)
+
 engine.setProperty('voice', voices[1].id)
 
 
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                 speak('I am sorry sir, this could not be done now...')
 
         elif 'hello' in query:
-            speak('hello sanu! i am jarvis. how are you?')
+            speak('hello sir! i am jarvis. how are you?')
 
         elif 'you there' in query:
             speak('always there for you sir!')
